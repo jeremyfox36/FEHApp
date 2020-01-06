@@ -1,0 +1,8 @@
+/Users/jem/web_development/FEHApp/FEHEntitiesLib/bin/Debug/netstandard2.0/FEHEntitiesLib.deps.json
+/Users/jem/web_development/FEHApp/FEHEntitiesLib/bin/Debug/netstandard2.0/FEHEntitiesLib.dll
+/Users/jem/web_development/FEHApp/FEHEntitiesLib/bin/Debug/netstandard2.0/FEHEntitiesLib.pdb
+/Users/jem/web_development/FEHApp/FEHEntitiesLib/obj/Debug/netstandard2.0/FEHEntitiesLib.csprojAssemblyReference.cache
+/Users/jem/web_development/FEHApp/FEHEntitiesLib/obj/Debug/netstandard2.0/FEHEntitiesLib.AssemblyInfoInputs.cache
+/Users/jem/web_development/FEHApp/FEHEntitiesLib/obj/Debug/netstandard2.0/FEHEntitiesLib.AssemblyInfo.cs
+/Users/jem/web_development/FEHApp/FEHEntitiesLib/obj/Debug/netstandard2.0/FEHEntitiesLib.dll
+/Users/jem/web_development/FEHApp/FEHEntitiesLib/obj/Debug/netstandard2.0/FEHEntitiesLib.pdb

@@ -1,0 +1,11 @@
+/Users/jem/web_development/FEHApp/FEHContextLib/bin/Debug/netstandard2.1/FEHContextLib.deps.json
+/Users/jem/web_development/FEHApp/FEHContextLib/bin/Debug/netstandard2.1/FEHContextLib.dll
+/Users/jem/web_development/FEHApp/FEHContextLib/bin/Debug/netstandard2.1/FEHContextLib.pdb
+/Users/jem/web_development/FEHApp/FEHContextLib/bin/Debug/netstandard2.1/FEHEntitiesLib.dll
+/Users/jem/web_development/FEHApp/FEHContextLib/bin/Debug/netstandard2.1/FEHEntitiesLib.pdb
+/Users/jem/web_development/FEHApp/FEHContextLib/obj/Debug/netstandard2.1/FEHContextLib.csprojAssemblyReference.cache
+/Users/jem/web_development/FEHApp/FEHContextLib/obj/Debug/netstandard2.1/FEHContextLib.AssemblyInfoInputs.cache
+/Users/jem/web_development/FEHApp/FEHContextLib/obj/Debug/netstandard2.1/FEHContextLib.AssemblyInfo.cs
+/Users/jem/web_development/FEHApp/FEHContextLib/obj/Debug/netstandard2.1/FEHContextLib.csproj.CopyComplete
+/Users/jem/web_development/FEHApp/FEHContextLib/obj/Debug/netstandard2.1/FEHContextLib.dll
+/Users/jem/web_development/FEHApp/FEHContextLib/obj/Debug/netstandard2.1/FEHContextLib.pdb
