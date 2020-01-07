@@ -1,0 +1,30 @@
+@page
+@model FEHWeb.Pages.UngaugedCatchmentsModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<div class="row">
+    <h1 class="display-2">Catchments</h1>
+    <table class="table table-bordered">
+        <thead class="thead-inverse">
+            <tr>
+                <th scope="col">Catchment Name</th>
+                <th scope="col">Catchment Number</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var item in Model.UngaugedCatchments)
+            {
+                <tr>
+                    <td>@item.CatchmentName</td>
+                    <td>@item.UserId</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<div class="row">
+    <p>Enter a name for the new catchment</p>
+    <form method="POST">
+        <div><input asp-for="Ungaugedcatchment.CatchmentName"/></div>
+        <input type="submit" />
+    </form>
+</div>
