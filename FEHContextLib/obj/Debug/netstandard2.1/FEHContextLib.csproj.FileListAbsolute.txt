@@ -9,3 +9,14 @@
 /Users/jem/web_development/FEHApp/FEHContextLib/obj/Debug/netstandard2.1/FEHContextLib.csproj.CopyComplete
 /Users/jem/web_development/FEHApp/FEHContextLib/obj/Debug/netstandard2.1/FEHContextLib.dll
 /Users/jem/web_development/FEHApp/FEHContextLib/obj/Debug/netstandard2.1/FEHContextLib.pdb
+C:\Users\jeremy.fox\source\repos\FEHApp\FEHContextLib\bin\Debug\netstandard2.1\FEHContextLib.deps.json
+C:\Users\jeremy.fox\source\repos\FEHApp\FEHContextLib\bin\Debug\netstandard2.1\FEHContextLib.dll
+C:\Users\jeremy.fox\source\repos\FEHApp\FEHContextLib\bin\Debug\netstandard2.1\FEHContextLib.pdb
+C:\Users\jeremy.fox\source\repos\FEHApp\FEHContextLib\bin\Debug\netstandard2.1\FEHEntitiesLib.dll
+C:\Users\jeremy.fox\source\repos\FEHApp\FEHContextLib\bin\Debug\netstandard2.1\FEHEntitiesLib.pdb
+C:\Users\jeremy.fox\source\repos\FEHApp\FEHContextLib\obj\Debug\netstandard2.1\FEHContextLib.csprojAssemblyReference.cache
+C:\Users\jeremy.fox\source\repos\FEHApp\FEHContextLib\obj\Debug\netstandard2.1\FEHContextLib.AssemblyInfoInputs.cache
+C:\Users\jeremy.fox\source\repos\FEHApp\FEHContextLib\obj\Debug\netstandard2.1\FEHContextLib.AssemblyInfo.cs
+C:\Users\jeremy.fox\source\repos\FEHApp\FEHContextLib\obj\Debug\netstandard2.1\FEHContextLib.csproj.CopyComplete
+C:\Users\jeremy.fox\source\repos\FEHApp\FEHContextLib\obj\Debug\netstandard2.1\FEHContextLib.dll
+C:\Users\jeremy.fox\source\repos\FEHApp\FEHContextLib\obj\Debug\netstandard2.1\FEHContextLib.pdb

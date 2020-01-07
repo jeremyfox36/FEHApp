@@ -1,0 +1,18 @@
+@page
+@functions
+{
+    public string DayName { get; set; }
+
+    public void OnGet()
+    {
+        ViewData["Title"] = "FEH web app";
+        Model.DayName = DateTime.Now.ToString("dddd");
+    }
+
+}
+<div class="jumbotron">
+            <h1 class="display-3">Welcome to the FEH web app</h1>
+            <p class="lead">Implements the Flood Estimation Handbook pooling methods</p>
+            <p>It's @Model.DayName!</p>
+            <a class="btn btn-primary" href="catchments">View the catchments</a>
+        </div>

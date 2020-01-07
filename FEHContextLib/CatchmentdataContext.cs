@@ -1,7 +1,6 @@
-﻿using FEHEntitiesLib;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 
-namespace FEHContextLib
+namespace FEHApp.Shared
 {
     public partial class CatchmentdataContext : DbContext
     {
