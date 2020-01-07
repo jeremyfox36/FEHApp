@@ -15,6 +15,7 @@ namespace FEHApp.Shared
 
         public virtual DbSet<FehappAmaxdata> FehappAmaxdata { get; set; }
         public virtual DbSet<FehappGaugedcatchment> FehappGaugedcatchment { get; set; }
+        public virtual DbSet<FehappUngaugedcatchment> FehappUngaugedcatchment { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -163,6 +164,109 @@ namespace FEHApp.Shared
                     .IsRequired()
                     .HasColumnName("yeartype")
                     .HasColumnType("varchar(20)");
+            });
+            modelBuilder.Entity<FehappUngaugedcatchment>(entity =>
+            {
+                entity.ToTable("FEHApp_ungaugedcatchment");
+
+                entity.HasIndex(e => e.UserId)
+                    .HasName("FEHApp_ungaugedcatchment_user_id_677a73d5");
+
+                entity.Property(e => e.Id)
+                    .HasColumnName("id")
+                    .ValueGeneratedNever();
+
+                entity.Property(e => e.Altbar).HasColumnName("altbar");
+
+                entity.Property(e => e.Area).HasColumnName("area");
+
+                entity.Property(e => e.Aspbar).HasColumnName("aspbar");
+
+                entity.Property(e => e.Aspvar).HasColumnName("aspvar");
+
+                entity.Property(e => e.Bfihost).HasColumnName("bfihost");
+
+                entity.Property(e => e.C).HasColumnName("c");
+
+                entity.Property(e => e.C1km).HasColumnName("c_1km");
+
+                entity.Property(e => e.CatchmentName)
+                    .IsRequired()
+                    .HasColumnName("catchment_name")
+                    .HasColumnType("varchar(50)");
+
+                entity.Property(e => e.Centroid).HasColumnName("centroid");
+
+                entity.Property(e => e.CentroidE).HasColumnName("centroid_e");
+
+                entity.Property(e => e.CentroidN).HasColumnName("centroid_n");
+
+                entity.Property(e => e.D1).HasColumnName("d1");
+
+                entity.Property(e => e.D11km).HasColumnName("d1_1km");
+
+                entity.Property(e => e.D2).HasColumnName("d2");
+
+                entity.Property(e => e.D21km).HasColumnName("d2_1km");
+
+                entity.Property(e => e.D3).HasColumnName("d3");
+
+                entity.Property(e => e.D31km).HasColumnName("d3_1km");
+
+                entity.Property(e => e.Dplbar).HasColumnName("dplbar");
+
+                entity.Property(e => e.Dpsbar).HasColumnName("dpsbar");
+
+                entity.Property(e => e.E).HasColumnName("e");
+
+                entity.Property(e => e.E1km).HasColumnName("e_1km");
+
+                entity.Property(e => e.F).HasColumnName("f");
+
+                entity.Property(e => e.F1km).HasColumnName("f_1km");
+
+                entity.Property(e => e.Farl).HasColumnName("farl");
+
+                entity.Property(e => e.Fpdbar).HasColumnName("fpdbar");
+
+                entity.Property(e => e.Fpext).HasColumnName("fpext");
+
+                entity.Property(e => e.Fploc).HasColumnName("fploc");
+
+                entity.Property(e => e.Ldp).HasColumnName("ldp");
+
+                entity.Property(e => e.Propwet).HasColumnName("propwet");
+
+                entity.Property(e => e.Rmed1d).HasColumnName("rmed_1d");
+
+                entity.Property(e => e.Rmed1h).HasColumnName("rmed_1h");
+
+                entity.Property(e => e.Rmed2d).HasColumnName("rmed_2d");
+
+                entity.Property(e => e.Saar).HasColumnName("saar");
+
+                entity.Property(e => e.Saar4170).HasColumnName("saar4170");
+
+                entity.Property(e => e.Sprhost).HasColumnName("sprhost");
+
+                entity.Property(e => e.Urbconc1990).HasColumnName("urbconc1990");
+
+                entity.Property(e => e.Urbconc2000).HasColumnName("urbconc2000");
+
+                entity.Property(e => e.Urbext1990).HasColumnName("urbext1990");
+
+                entity.Property(e => e.Urbext2000).HasColumnName("urbext2000");
+
+                entity.Property(e => e.Urbloc1990).HasColumnName("urbloc1990");
+
+                entity.Property(e => e.Urbloc2000).HasColumnName("urbloc2000");
+
+                entity.Property(e => e.UserId).HasColumnName("user_id");
+
+                entity.Property(e => e.Version)
+                    .IsRequired()
+                    .HasColumnName("version")
+                    .HasColumnType("varchar(5)");
             });
 
             OnModelCreatingPartial(modelBuilder);
