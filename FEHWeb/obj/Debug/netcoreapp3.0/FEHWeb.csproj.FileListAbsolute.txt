@@ -118,3 +118,4 @@ C:/Users/jeremy.fox/source/repos/FEHApp/FEHWeb/obj/Debug/netcoreapp3.0/Razor/Pag
 /Users/jem/web_development/FEHApp/FEHWeb/obj/Debug/netcoreapp3.0/FEHWeb.RazorTargetAssemblyInfo.cs
 /Users/jem/web_development/FEHApp/FEHWeb/obj/Debug/netcoreapp3.0/FEHWeb.Views.pdb
 /Users/jem/web_development/FEHApp/FEHWeb/obj/Debug/netcoreapp3.0/FEHWeb.csproj.CopyComplete
+/Users/jem/web_development/FEHApp/FEHWeb/obj/Debug/netcoreapp3.0/Razor/Pages/catchmentdetails.cshtml.g.cs

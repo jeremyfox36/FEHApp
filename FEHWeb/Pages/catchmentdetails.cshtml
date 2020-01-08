@@ -1,0 +1,23 @@
+@page "{catchmentId=17002}"
+@model FEHWeb.Pages.CatchmentDetailsModel
+<div class="row">
+    <h1 class="display-2">Amax data for catchment @Model.Id</h1>
+    <table class="table table-bordered">
+        <thead class="thead-inverse">
+            <tr>
+                <th scope="col">Monitoring date</th>
+                <th scope="col">Flow rate (cumec)</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var item in Model.AmaxData)
+            {
+                    <tr>
+                    <td>@item.Mondate</td>
+                    <td>@item.Flow</td>
+                </tr>
+                
+            }
+        </tbody>
+    </table>
+</div>
