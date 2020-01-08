@@ -174,7 +174,7 @@ namespace FEHApp.Shared
 
                 entity.Property(e => e.Id)
                     .HasColumnName("id")
-                    .ValueGeneratedNever();
+                    .ValueGeneratedOnAdd();
 
                 entity.Property(e => e.Altbar).HasColumnName("altbar");
 

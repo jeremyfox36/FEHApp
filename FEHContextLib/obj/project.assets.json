@@ -1217,37 +1217,35 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jeremy.fox\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/jem/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jeremy.fox\\source\\repos\\FEHApp\\FEHContextLib\\FEHContextLib.csproj",
+      "projectUniqueName": "/Users/jem/web_development/FEHApp/FEHContextLib/FEHContextLib.csproj",
       "projectName": "FEHContextLib",
-      "projectPath": "C:\\Users\\jeremy.fox\\source\\repos\\FEHApp\\FEHContextLib\\FEHContextLib.csproj",
-      "packagesPath": "C:\\Users\\jeremy.fox\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jeremy.fox\\source\\repos\\FEHApp\\FEHContextLib\\obj\\",
+      "projectPath": "/Users/jem/web_development/FEHApp/FEHContextLib/FEHContextLib.csproj",
+      "packagesPath": "/Users/jem/.nuget/packages/",
+      "outputPath": "/Users/jem/web_development/FEHApp/FEHContextLib/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\jeremy.fox\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/jem/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netstandard2.1": {
           "projectReferences": {
-            "C:\\Users\\jeremy.fox\\source\\repos\\FEHApp\\FEHEntitiesLib\\FEHEntitiesLib.csproj": {
-              "projectPath": "C:\\Users\\jeremy.fox\\source\\repos\\FEHApp\\FEHEntitiesLib\\FEHEntitiesLib.csproj"
+            "/Users/jem/web_development/FEHApp/FEHEntitiesLib/FEHEntitiesLib.csproj": {
+              "projectPath": "/Users/jem/web_development/FEHApp/FEHEntitiesLib/FEHEntitiesLib.csproj"
             }
           }
         }
@@ -1281,7 +1279,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.101/RuntimeIdentifierGraph.json"
       }
     }
   }
