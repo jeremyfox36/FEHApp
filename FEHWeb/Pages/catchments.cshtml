@@ -12,9 +12,13 @@
         <tbody>
             @foreach(var item in Model.Catchments)
             {
+                long catchmentId = item.Catchment;
                 <tr>
                     <td>@item.StName</td>
                     <td>@item.Catchment</td>
+                    <td>
+                        <a href="@Url.Page("./catchmentdetails/catchmentId")"></a>
+                    </td>
                 </tr>
             }
         </tbody>
