@@ -1,7 +1,23 @@
 @page "{catchmentId=17002}"
 @model FEHWeb.Pages.CatchmentDetailsModel
 <div class="row">
-    <h1 class="display-2">Amax data for catchment @Model.Id</h1>
+    <h1 class="display-2">Details for catchment @Model.Catchment.Catchment</h1>
+</div>
+<div class="row">
+    <div class="card">
+        <div class="card-body">
+    <h5 class="card-title">@Model.Catchment.StName</h5>
+    <p class="card-text">@Model.Catchment.CatchmentComments</p>
+    <h6>Station Comments</h6>
+    <p class="card-text">@Model.Catchment.StationComments</p>
+    <h6>QMED Comments</h6>
+    <p class="card-text">@Model.Catchment.QmedComments</p>
+    <h6>Pooling Comments</h6>
+    <p class="card-text">@Model.Catchment.PoolingComments</p>
+  </div>
+</div>
+</div>
+
     <table class="table table-bordered">
         <thead class="thead-inverse">
             <tr>
@@ -16,8 +32,6 @@
                     <td>@item.Mondate</td>
                     <td>@item.Flow</td>
                 </tr>
-                
             }
         </tbody>
     </table>
-</div>
