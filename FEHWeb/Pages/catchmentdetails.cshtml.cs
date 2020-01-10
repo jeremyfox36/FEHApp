@@ -13,11 +13,9 @@ namespace FEHWeb.Pages
 {
     public class CatchmentDetailsModel : PageModel
     {
-        public IEnumerable<FehappAmaxdata> AmaxData { get; set; }
         public FehappGaugedcatchment Catchment { get; set; }
         public string jsonAmax { get; set; }
         private CatchmentdataContext db;
-        public int Id { get; set; }
 
         public CatchmentDetailsModel(CatchmentdataContext injectedContext)
         {
@@ -26,12 +24,10 @@ namespace FEHWeb.Pages
 
         public void OnGet(int catchmentId)
         {
-             Id = catchmentId;
-             AmaxData = db.FehappAmaxdata
-                .Where(c => c.CatchmentId == catchmentId);
-            Catchment = (from c in db.FehappGaugedcatchment
-                where c.Catchment == Id
-                select c).FirstOrDefault();
+            Catchment = db.FehappGaugedcatchment
+                .Where (c => c.Catchment == catchmentId)
+                .Include(c => c.FehappAmaxdata)
+                .FirstOrDefault();
             //jsonAmax = JsonSerializer.Serialize(AmaxData);
         }
     }

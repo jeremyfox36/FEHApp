@@ -336,6 +336,17 @@
           "lib/netstandard2.0/SQLitePCLRaw.provider.dynamic_cdecl.dll": {}
         }
       },
+      "System-Web-Helpers.dll/1.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/Net40/System.Web.Helpers.dll": {},
+          "lib/Net40/System.Web.WebPages.dll": {}
+        },
+        "runtime": {
+          "lib/Net40/System.Web.Helpers.dll": {},
+          "lib/Net40/System.Web.WebPages.dll": {}
+        }
+      },
       "System.Collections.Immutable/1.6.0": {
         "type": "package",
         "compile": {
@@ -407,6 +418,9 @@
       "FEHEntitiesLib/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "System-Web-Helpers.dll": "(, )"
+        },
         "compile": {
           "bin/placeholder/FEHEntitiesLib.dll": {}
         },
@@ -780,6 +794,19 @@
         "sqlitepclraw.provider.dynamic_cdecl.nuspec"
       ]
     },
+    "System-Web-Helpers.dll/1.0.1": {
+      "sha512": "N2/xjmmcYw5lRvcJDEb50NAjong+S5N0nDfyYyNwfwslP7sMKAwd27jwTzTRXXeGqF9JffzJ31bcbT4sWHNyCw==",
+      "type": "package",
+      "path": "system-web-helpers.dll/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/Net40/System.Web.Helpers.dll",
+        "lib/Net40/System.Web.WebPages.dll",
+        "system-web-helpers.dll.1.0.1.nupkg.sha512",
+        "system-web-helpers.dll.nuspec"
+      ]
+    },
     "System.Collections.Immutable/1.6.0": {
       "sha512": "+aL946rTSJyo4PqstwsVZ5RBfaxfkIx+nTMfpmaxzorqgifRJwndBZhXPWNWGJpys7cQ1/vCvilYN9ugM05JFA==",
       "type": "package",
@@ -1011,35 +1038,37 @@
     ]
   },
   "packageFolders": {
-    "/Users/jem/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\jeremy.fox\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/jem/web_development/FEHApp/FEHWeb/FEHWeb.csproj",
+      "projectUniqueName": "C:\\Users\\jeremy.fox\\source\\repos\\FEHApp\\FEHWeb\\FEHWeb.csproj",
       "projectName": "FEHWeb",
-      "projectPath": "/Users/jem/web_development/FEHApp/FEHWeb/FEHWeb.csproj",
-      "packagesPath": "/Users/jem/.nuget/packages/",
-      "outputPath": "/Users/jem/web_development/FEHApp/FEHWeb/obj/",
+      "projectPath": "C:\\Users\\jeremy.fox\\source\\repos\\FEHApp\\FEHWeb\\FEHWeb.csproj",
+      "packagesPath": "C:\\Users\\jeremy.fox\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jeremy.fox\\source\\repos\\FEHApp\\FEHWeb\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/jem/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\jeremy.fox\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "/Users/jem/web_development/FEHApp/FEHContextLib/FEHContextLib.csproj": {
-              "projectPath": "/Users/jem/web_development/FEHApp/FEHContextLib/FEHContextLib.csproj"
+            "C:\\Users\\jeremy.fox\\source\\repos\\FEHApp\\FEHContextLib\\FEHContextLib.csproj": {
+              "projectPath": "C:\\Users\\jeremy.fox\\source\\repos\\FEHApp\\FEHContextLib\\FEHContextLib.csproj"
             }
           }
         }
@@ -1070,8 +1099,20 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.101/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'System-Web-Helpers.dll 1.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.0'. This package may not be fully compatible with your project.",
+      "libraryId": "System-Web-Helpers.dll",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.0"
+      ]
+    }
+  ]
 }
