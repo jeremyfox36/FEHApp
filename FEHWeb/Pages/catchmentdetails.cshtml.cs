@@ -4,8 +4,7 @@ using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Text.Json;
-using System.Text.Json.Serialization;
-using System.Web.Helpers;
+using Newtonsoft.Json;
 
 using FEHApp.Shared;
 
@@ -14,6 +13,7 @@ namespace FEHWeb.Pages
     public class CatchmentDetailsModel : PageModel
     {
         public FehappGaugedcatchment Catchment { get; set; }
+        
         public string jsonAmax { get; set; }
         private CatchmentdataContext db;
 
@@ -24,11 +24,17 @@ namespace FEHWeb.Pages
 
         public void OnGet(int catchmentId)
         {
+            var AmaxData = from c in db.FehappAmaxdata
+                where c.CatchmentId == catchmentId
+                select c;
             Catchment = db.FehappGaugedcatchment
                 .Where (c => c.Catchment == catchmentId)
                 .Include(c => c.FehappAmaxdata)
                 .FirstOrDefault();
-            //jsonAmax = JsonSerializer.Serialize(AmaxData);
+            jsonAmax = JsonConvert.SerializeObject(AmaxData, Formatting.Indented,
+            new JsonSerializerSettings(){
+                ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+            });
         }
     }
 }

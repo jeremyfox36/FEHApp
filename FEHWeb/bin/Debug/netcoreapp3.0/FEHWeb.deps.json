@@ -25,6 +25,7 @@
       "FEHWeb/1.0.0": {
         "dependencies": {
           "FEHContextLib": "1.0.0",
+          "System.Windows.Forms.DataVisualization": "1.0.0-prerelease.19218.1",
           "Microsoft.AspNetCore.Antiforgery": "3.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.0.0.0",
@@ -315,6 +316,17 @@
           "FEHWeb.dll": {}
         }
       },
+      "Json.Net/1.0.18": {
+        "runtime": {
+          "lib/netstandard2.0/Json.Net.dll": {
+            "assemblyVersion": "1.0.18.1",
+            "fileVersion": "1.0.18.1"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Json.Net.dll": {}
+        }
+      },
       "Microsoft.Data.Sqlite.Core/3.0.0": {
         "dependencies": {
           "SQLitePCLRaw.core": "2.0.0"
@@ -475,6 +487,17 @@
         }
       },
       "Microsoft.Extensions.Primitives/3.0.0": {},
+      "Newtonsoft.Json/12.0.3": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.3.23909"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
       "SQLitePCLRaw.bundle_e_sqlite3/2.0.0": {
         "dependencies": {
           "SQLitePCLRaw.core": "2.0.0",
@@ -588,22 +611,6 @@
           "lib/netstandard2.0/SQLitePCLRaw.provider.dynamic_cdecl.dll": {}
         }
       },
-      "System-Web-Helpers.dll/1.0.1": {
-        "runtime": {
-          "lib/Net40/System.Web.Helpers.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.0.20710.0"
-          },
-          "lib/Net40/System.Web.WebPages.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.0.20710.0"
-          }
-        },
-        "compile": {
-          "lib/Net40/System.Web.Helpers.dll": {},
-          "lib/Net40/System.Web.WebPages.dll": {}
-        }
-      },
       "System.Collections.Immutable/1.6.0": {
         "compile": {
           "lib/netstandard2.0/System.Collections.Immutable.dll": {}
@@ -626,6 +633,17 @@
         }
       },
       "System.Threading.Tasks.Extensions/4.5.2": {},
+      "System.Windows.Forms.DataVisualization/1.0.0-prerelease.19218.1": {
+        "runtime": {
+          "lib/netcoreapp3.0/System.Windows.Forms.DataVisualization.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.19.21801"
+          }
+        },
+        "compile": {
+          "ref/netcoreapp3.0/System.Windows.Forms.DataVisualization.dll": {}
+        }
+      },
       "FEHContextLib/1.0.0": {
         "dependencies": {
           "FEHEntitiesLib": "1.0.0",
@@ -640,7 +658,8 @@
       },
       "FEHEntitiesLib/1.0.0": {
         "dependencies": {
-          "System-Web-Helpers.dll": "1.0.1"
+          "Json.Net": "1.0.18",
+          "Newtonsoft.Json": "12.0.3"
         },
         "runtime": {
           "FEHEntitiesLib.dll": {}
@@ -2349,6 +2368,13 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Json.Net/1.0.18": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LeHX1l1FbTeg5C6rvx19qE/OLrPM7ggmlMBJgu08bcMn9anbE0SEF3BXwhUrio8/f0445XJnAaE5gmhqRCEuzw==",
+      "path": "json.net/1.0.18",
+      "hashPath": "json.net.1.0.18.nupkg.sha512"
+    },
     "Microsoft.Data.Sqlite.Core/3.0.0": {
       "type": "package",
       "serviceable": true,
@@ -2489,6 +2515,13 @@
       "path": "microsoft.extensions.primitives/3.0.0",
       "hashPath": "microsoft.extensions.primitives.3.0.0.nupkg.sha512"
     },
+    "Newtonsoft.Json/12.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "path": "newtonsoft.json/12.0.3",
+      "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
+    },
     "SQLitePCLRaw.bundle_e_sqlite3/2.0.0": {
       "type": "package",
       "serviceable": true,
@@ -2516,13 +2549,6 @@
       "sha512": "sha512-4Z/Dtk/qqW/UTwmfAcfrzUUEkT7lf5lnAbKCUFLB6pPl0gL6p8CTj7/2zfw2LuT8Gjpd9XCus4LnrAj1p2J3Bw==",
       "path": "sqlitepclraw.provider.dynamic_cdecl/2.0.0",
       "hashPath": "sqlitepclraw.provider.dynamic_cdecl.2.0.0.nupkg.sha512"
-    },
-    "System-Web-Helpers.dll/1.0.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-N2/xjmmcYw5lRvcJDEb50NAjong+S5N0nDfyYyNwfwslP7sMKAwd27jwTzTRXXeGqF9JffzJ31bcbT4sWHNyCw==",
-      "path": "system-web-helpers.dll/1.0.1",
-      "hashPath": "system-web-helpers.dll.1.0.1.nupkg.sha512"
     },
     "System.Collections.Immutable/1.6.0": {
       "type": "package",
@@ -2565,6 +2591,13 @@
       "sha512": "sha512-BG/TNxDFv0svAzx8OiMXDlsHfGw623BZ8tCXw4YLhDFDvDhNUEV58jKYMGRnkbJNm7c3JNNJDiN7JBMzxRBR2w==",
       "path": "system.threading.tasks.extensions/4.5.2",
       "hashPath": "system.threading.tasks.extensions.4.5.2.nupkg.sha512"
+    },
+    "System.Windows.Forms.DataVisualization/1.0.0-prerelease.19218.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-N5BWYwb60tH29495heBgsbsGjzVnOF4d0rPmYWCeEORlYxBJmcNKUDqjpEd4cvZlKXuho4LwqhmAbuvGEA9tjg==",
+      "path": "system.windows.forms.datavisualization/1.0.0-prerelease.19218.1",
+      "hashPath": "system.windows.forms.datavisualization.1.0.0-prerelease.19218.1.nupkg.sha512"
     },
     "FEHContextLib/1.0.0": {
       "type": "project",

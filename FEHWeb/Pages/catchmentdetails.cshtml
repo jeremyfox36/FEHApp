@@ -35,3 +35,43 @@
             }
         </tbody>
     </table>
+    <div id="chart"></div>
+    @section Scripts
+    {
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script>
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            // var json = {
+            //    cols: [
+            //        { id: 'taxType', label: 'Tax Type', type: 'string' },
+            //        { id: 'percent', label: 'Tax Percentage', type: 'number' }
+            //    ],
+             //   rows: [
+            //        { c: [{ v: 'Soc. Sec. Tax' }, { v: 30, f: '30%' }] },
+            //        { c: [{ v: 'Income Tax' }, { v: 35 }] },
+            //        { c: [{ v: 'Borrowing' }, { v: 15 }] },
+            //        { c: [{ v: 'Corp. Tax' }, { v: 12 }] },
+           //         { c: [{ v: 'Misc' }, { v: 8 }] },
+            //    ],
+            //};
+            var json = @Html.Raw(Model.jsonAmax);
+            var data = new google.visualization.DataTable(json);
+            console.log(json);
+
+
+            // Simple Pie Chart:
+            var option = {
+                title: 'Tax Structure in US',
+                width: 500,
+                height: 400
+            };
+            var chart = new google.visualization.PieChart(document.getElementById('chart'));
+            chart.draw(data, option);
+
+            //3D Pie Chart:
+        }
+    </script>
+    }
