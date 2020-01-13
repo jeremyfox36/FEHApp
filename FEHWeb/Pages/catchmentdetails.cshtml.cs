@@ -24,17 +24,22 @@ namespace FEHWeb.Pages
 
         public void OnGet(int catchmentId)
         {
-            var AmaxData = from c in db.FehappAmaxdata
-                where c.CatchmentId == catchmentId
-                select c;
             Catchment = db.FehappGaugedcatchment
                 .Where (c => c.Catchment == catchmentId)
                 .Include(c => c.FehappAmaxdata)
-                .FirstOrDefault();
-            jsonAmax = JsonConvert.SerializeObject(AmaxData, Formatting.Indented,
+                .SingleOrDefault();
+
+            var AmaxData = Catchment.FehappAmaxdata;
+            jsonAmax = JsonData(AmaxData);
+            
+        }
+
+        private string JsonData(ICollection<FehappAmaxdata> amaxData)
+        {
+            return jsonAmax = JsonConvert.SerializeObject(amaxData, Formatting.Indented,
             new JsonSerializerSettings(){
                 ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
-            });
+            });;
         }
     }
 }
