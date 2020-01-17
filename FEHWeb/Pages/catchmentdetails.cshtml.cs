@@ -28,13 +28,11 @@ namespace FEHWeb.Pages
                 .Where (c => c.Catchment == catchmentId)
                 .Include(c => c.FehappAmaxdata)
                 .SingleOrDefault();
-
-            var AmaxData = Catchment.FehappAmaxdata;
-            jsonAmax = JsonData(AmaxData);
+            jsonAmax = JsonData(Catchment);
             
         }
 
-        private string JsonData(ICollection<FehappAmaxdata> amaxData)
+        private string JsonData(FehappGaugedcatchment amaxData)
         {
             return jsonAmax = JsonConvert.SerializeObject(amaxData, Formatting.Indented,
             new JsonSerializerSettings(){
