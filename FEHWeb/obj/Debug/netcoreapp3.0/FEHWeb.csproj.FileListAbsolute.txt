@@ -121,5 +121,4 @@ C:\Users\jeremy.fox\source\repos\FEHApp\FEHWeb\obj\Debug\netcoreapp3.0\FEHWeb.Ra
 C:\Users\jeremy.fox\source\repos\FEHApp\FEHWeb\obj\Debug\netcoreapp3.0\FEHWeb.Views.pdb
 C:\Users\jeremy.fox\source\repos\FEHApp\FEHWeb\obj\Debug\netcoreapp3.0\FEHWeb.csproj.CopyComplete
 C:\Users\jeremy.fox\source\repos\FEHApp\FEHWeb\bin\Debug\netcoreapp3.0\System.Windows.Forms.DataVisualization.dll
-C:\Users\jeremy.fox\source\repos\FEHApp\FEHWeb\bin\Debug\netcoreapp3.0\Json.Net.dll
 C:\Users\jeremy.fox\source\repos\FEHApp\FEHWeb\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
