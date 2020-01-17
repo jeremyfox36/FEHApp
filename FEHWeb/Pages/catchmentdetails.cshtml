@@ -1,0 +1,77 @@
+@page "{catchmentId=17002}"
+@model FEHWeb.Pages.CatchmentDetailsModel
+<div class="row">
+    <h1 class="display-2">Details for catchment @Model.Catchment.Catchment</h1>
+</div>
+<div class="row">
+    <div class="card">
+        <div class="card-body">
+    <h5 class="card-title">@Model.Catchment.StName</h5>
+    <p class="card-text">@Model.Catchment.CatchmentComments</p>
+    <h6>Station Comments</h6>
+    <p class="card-text">@Model.Catchment.StationComments</p>
+    <h6>QMED Comments</h6>
+    <p class="card-text">@Model.Catchment.QmedComments</p>
+    <h6>Pooling Comments</h6>
+    <p class="card-text">@Model.Catchment.PoolingComments</p>
+  </div>
+</div>
+</div>
+
+    <table class="table table-bordered">
+        <thead class="thead-inverse">
+            <tr>
+                <th scope="col">Monitoring date</th>
+                <th scope="col">Flow rate (cumec)</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var item in Model.Catchment.FehappAmaxdata)
+            {
+                    <tr>
+                    <td>@item.Mondate</td>
+                    <td>@item.Flow</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <div id="chart"></div>
+    @section Scripts
+    {
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script>
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            // var json = {
+            //    cols: [
+            //        { id: 'taxType', label: 'Tax Type', type: 'string' },
+            //        { id: 'percent', label: 'Tax Percentage', type: 'number' }
+            //    ],
+             //   rows: [
+            //        { c: [{ v: 'Soc. Sec. Tax' }, { v: 30, f: '30%' }] },
+            //        { c: [{ v: 'Income Tax' }, { v: 35 }] },
+            //        { c: [{ v: 'Borrowing' }, { v: 15 }] },
+            //        { c: [{ v: 'Corp. Tax' }, { v: 12 }] },
+           //         { c: [{ v: 'Misc' }, { v: 8 }] },
+            //    ],
+            //};
+            var json = @Html.Raw(Model.jsonAmax);
+            var data = new google.visualization.DataTable(json);
+            console.log(json);
+
+
+            // Simple Pie Chart:
+            var option = {
+                title: 'Tax Structure in US',
+                width: 500,
+                height: 400
+            };
+            var chart = new google.visualization.BarChart(document.getElementById('chart'));
+            chart.draw(data, option);
+
+            //3D Pie Chart:
+        }
+    </script>
+    }
