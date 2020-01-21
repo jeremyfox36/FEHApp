@@ -1,0 +1,200 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/jem/web_development/FEHApp/FEHWeb/FEHWeb.csproj": {}
+  },
+  "projects": {
+    "/Users/jem/web_development/FEHApp/FEHContextLib/FEHContextLib.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/jem/web_development/FEHApp/FEHContextLib/FEHContextLib.csproj",
+        "projectName": "FEHContextLib",
+        "projectPath": "/Users/jem/web_development/FEHApp/FEHContextLib/FEHContextLib.csproj",
+        "packagesPath": "/Users/jem/.nuget/packages/",
+        "outputPath": "/Users/jem/web_development/FEHApp/FEHContextLib/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/jem/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {
+              "/Users/jem/web_development/FEHApp/FEHEntitiesLib/FEHEntitiesLib.csproj": {
+                "projectPath": "/Users/jem/web_development/FEHApp/FEHEntitiesLib/FEHEntitiesLib.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SQLite": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/jem/web_development/FEHApp/FEHEntitiesLib/FEHEntitiesLib.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/jem/web_development/FEHApp/FEHEntitiesLib/FEHEntitiesLib.csproj",
+        "projectName": "FEHEntitiesLib",
+        "projectPath": "/Users/jem/web_development/FEHApp/FEHEntitiesLib/FEHEntitiesLib.csproj",
+        "packagesPath": "/Users/jem/.nuget/packages/",
+        "outputPath": "/Users/jem/web_development/FEHApp/FEHEntitiesLib/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/jem/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/jem/web_development/FEHApp/FEHWeb/FEHWeb.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/jem/web_development/FEHApp/FEHWeb/FEHWeb.csproj",
+        "projectName": "FEHWeb",
+        "projectPath": "/Users/jem/web_development/FEHApp/FEHWeb/FEHWeb.csproj",
+        "packagesPath": "/Users/jem/.nuget/packages/",
+        "outputPath": "/Users/jem/web_development/FEHApp/FEHWeb/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/jem/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "/Users/jem/web_development/FEHApp/FEHContextLib/FEHContextLib.csproj": {
+                "projectPath": "/Users/jem/web_development/FEHApp/FEHContextLib/FEHContextLib.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Google.DataTable.Net.Wrapper": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
+            "System.Windows.Forms.DataVisualization": {
+              "target": "Package",
+              "version": "[1.0.0-prerelease.19218.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

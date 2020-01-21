@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Text.Json;
 using Newtonsoft.Json;
+using Google.DataTable.Net.Wrapper;
 
 using FEHApp.Shared;
 
@@ -34,10 +35,27 @@ namespace FEHWeb.Pages
 
         private string JsonData(FehappGaugedcatchment amaxData)
         {
-            return jsonAmax = JsonConvert.SerializeObject(amaxData, Formatting.Indented,
-            new JsonSerializerSettings(){
-                ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
-            });;
+            var dt = new Google.DataTable.Net.Wrapper.DataTable();
+            dt.AddColumn(new Column(ColumnType.String, "Mondate", "Monitoring Date"));
+            dt.AddColumn(new Column(ColumnType.Number, "Flow", "Flow"));
+
+            foreach(var item in Catchment.FehappAmaxdata)
+            {
+                Row r = dt.NewRow();
+                r.AddCellRange(new Cell[]
+                {
+
+                    new Cell(item.Mondate),
+                    new Cell(item.Flow)
+
+                });
+                dt.AddRow(r);
+            }
+            return dt.GetJson();
+            // return jsonAmax = JsonConvert.SerializeObject(amaxData, Formatting.Indented,
+            // new JsonSerializerSettings(){
+            //     ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+            // });;
         }
     }
 }

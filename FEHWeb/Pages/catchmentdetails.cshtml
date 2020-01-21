@@ -17,24 +17,6 @@
   </div>
 </div>
 </div>
-
-    <table class="table table-bordered">
-        <thead class="thead-inverse">
-            <tr>
-                <th scope="col">Monitoring date</th>
-                <th scope="col">Flow rate (cumec)</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach(var item in Model.Catchment.FehappAmaxdata)
-            {
-                    <tr>
-                    <td>@item.Mondate</td>
-                    <td>@item.Flow</td>
-                </tr>
-            }
-        </tbody>
-    </table>
     <div id="chart"></div>
     @section Scripts
     {
@@ -44,34 +26,22 @@
         google.charts.setOnLoadCallback(drawChart);
 
         function drawChart() {
-            // var json = {
-            //    cols: [
-            //        { id: 'taxType', label: 'Tax Type', type: 'string' },
-            //        { id: 'percent', label: 'Tax Percentage', type: 'number' }
-            //    ],
-             //   rows: [
-            //        { c: [{ v: 'Soc. Sec. Tax' }, { v: 30, f: '30%' }] },
-            //        { c: [{ v: 'Income Tax' }, { v: 35 }] },
-            //        { c: [{ v: 'Borrowing' }, { v: 15 }] },
-            //        { c: [{ v: 'Corp. Tax' }, { v: 12 }] },
-           //         { c: [{ v: 'Misc' }, { v: 8 }] },
-            //    ],
-            //};
+            
             var json = @Html.Raw(Model.jsonAmax);
             var data = new google.visualization.DataTable(json);
             console.log(json);
-
-
-            // Simple Pie Chart:
-            var option = {
-                title: 'Tax Structure in US',
-                width: 500,
-                height: 400
+            var options = {
+                title: "Annual maxima (amax) flow rates (cumecs)"
+                ,legend: { position: "none" }
+                ,width: '100%'
+                ,height: 600
+                ,hAxis: {
+                    slantedTextAngle: 90
+                }
             };
-            var chart = new google.visualization.BarChart(document.getElementById('chart'));
-            chart.draw(data, option);
+            var chart = new google.visualization.ColumnChart(document.getElementById('chart'));
+            chart.draw(data, options);
 
-            //3D Pie Chart:
         }
     </script>
     }
