@@ -62,3 +62,4 @@
 /Users/jem/web_development/FEHApp/FEHWeb/obj/Debug/netcoreapp3.0/FEHWeb.dll
 /Users/jem/web_development/FEHApp/FEHWeb/obj/Debug/netcoreapp3.0/FEHWeb.pdb
 /Users/jem/web_development/FEHApp/FEHWeb/bin/Debug/netcoreapp3.0/Google.DataTable.Net.Wrapper.dll
+/Users/jem/web_development/FEHApp/FEHWeb/obj/Debug/netcoreapp3.0/Razor/Pages/Shared/_Layout2.cshtml.g.cs
