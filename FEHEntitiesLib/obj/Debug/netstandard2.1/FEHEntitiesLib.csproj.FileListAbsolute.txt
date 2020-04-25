@@ -1,0 +1,8 @@
+C:\Users\Jem\source\repos\FEHApp\FEHEntitiesLib\bin\Debug\netstandard2.1\FEHEntitiesLib.deps.json
+C:\Users\Jem\source\repos\FEHApp\FEHEntitiesLib\bin\Debug\netstandard2.1\FEHEntitiesLib.dll
+C:\Users\Jem\source\repos\FEHApp\FEHEntitiesLib\bin\Debug\netstandard2.1\FEHEntitiesLib.pdb
+C:\Users\Jem\source\repos\FEHApp\FEHEntitiesLib\obj\Debug\netstandard2.1\FEHEntitiesLib.csprojAssemblyReference.cache
+C:\Users\Jem\source\repos\FEHApp\FEHEntitiesLib\obj\Debug\netstandard2.1\FEHEntitiesLib.AssemblyInfoInputs.cache
+C:\Users\Jem\source\repos\FEHApp\FEHEntitiesLib\obj\Debug\netstandard2.1\FEHEntitiesLib.AssemblyInfo.cs
+C:\Users\Jem\source\repos\FEHApp\FEHEntitiesLib\obj\Debug\netstandard2.1\FEHEntitiesLib.dll
+C:\Users\Jem\source\repos\FEHApp\FEHEntitiesLib\obj\Debug\netstandard2.1\FEHEntitiesLib.pdb

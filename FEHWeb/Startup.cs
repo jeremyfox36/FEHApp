@@ -1,10 +1,5 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System.IO;
@@ -20,7 +15,13 @@ namespace FEHWeb
         public void ConfigureServices(IServiceCollection services)
         {
             string databasePath = Path.Combine("..", "catchmentdata.db");
-            services.AddRazorPages();
+            services.AddRazorPages()
+                .AddRazorPagesOptions(options => 
+                {
+                    options.Conventions.AuthorizePage("/Catchments");
+                    options.Conventions.AuthorizePage("/Index");
+                });
+            services.AddMvc();
             services.AddDbContext<CatchmentdataContext>(options => options.UseSqlite($"Data Source={databasePath}"));
         }
 
@@ -42,13 +43,11 @@ namespace FEHWeb
 
             app.UseDefaultFiles();
             app.UseStaticFiles();
-
+            app.UseAuthentication();
+            app.UseAuthorization();
             app.UseEndpoints(endpoints =>
             {
-                /* endpoints.MapGet("/", async context =>
-                {
-                    await context.Response.WriteAsync("Hello World!");
-                }); */
+                endpoints.MapControllers();
                 endpoints.MapRazorPages();
             });
         }
