@@ -20,7 +20,6 @@
 
   <ItemGroup>
     <Folder Include="Areas\Catchments\Data\" />
-    <Folder Include="Areas\Catchments\Pages\" />
     <Folder Include="Areas\Pooling\Data\" />
   </ItemGroup>
 

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using FEHApp.Shared;
 
-namespace FEHWeb.Pages
+namespace FEHWeb.Areas.Pooling.Pages
 {
     public class CatchmentsModel : PageModel
     {
