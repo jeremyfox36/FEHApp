@@ -25,6 +25,8 @@ namespace FEHWeb.Pages
 
         public void OnGet(int catchmentId)
         {
+            ViewData["Copyright"] = "Jeremy Fox";
+            ViewData["Acknowledgement"] = "Acknowledgement: Data from the UK National River Flow Archive";
             Catchment = db.FehappGaugedcatchment
                 .Where (c => c.Catchment == catchmentId)
                 .Include(c => c.FehappAmaxdata)

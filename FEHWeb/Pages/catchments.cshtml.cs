@@ -17,8 +17,8 @@ namespace FEHWeb.Pages
 
         public void OnGet()
         {
-            ViewData["Title"] = "Feh web app - Catchments";
-
+            ViewData["Copyright"] = "Jeremy Fox";
+            ViewData["Acknowledgement"] = "Acknowledgement: Data from the UK National River Flow Archive";
             Catchments = db.FehappGaugedcatchment.ToList();
         }
     }

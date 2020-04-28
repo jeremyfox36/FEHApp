@@ -18,8 +18,7 @@ namespace FEHWeb
             services.AddRazorPages()
                 .AddRazorPagesOptions(options => 
                 {
-                    options.Conventions.AuthorizePage("/Catchments");
-                    options.Conventions.AuthorizePage("/Index");
+                    options.Conventions.AuthorizePage("/ungaugedcatchments");
                 });
             services.AddMvc();
             services.AddDbContext<CatchmentdataContext>(options => options.UseSqlite($"Data Source={databasePath}"));
