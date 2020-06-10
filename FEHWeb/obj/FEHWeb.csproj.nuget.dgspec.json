@@ -181,6 +181,10 @@
               "target": "Package",
               "version": "[4.0.0, )"
             },
+            "Microsoft.AspNet.WebHelpers": {
+              "target": "Package",
+              "version": "[3.2.7, )"
+            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.0.0, )"

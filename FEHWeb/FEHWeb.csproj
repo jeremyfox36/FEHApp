@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <PackageReference Include="Google.DataTable.Net.Wrapper" Version="4.0.0" />
+    <PackageReference Include="Microsoft.AspNet.WebHelpers" Version="3.2.7" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.0.0" />
@@ -21,6 +22,7 @@
   <ItemGroup>
     <Folder Include="Areas\Catchments\Data\" />
     <Folder Include="Areas\Pooling\Data\" />
+    <Folder Include="Areas\SingleSite\Data\" />
   </ItemGroup>
 
   <PropertyGroup>

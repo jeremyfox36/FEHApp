@@ -49,6 +49,8 @@ namespace FEHWeb
                 endpoints.MapControllers();
                 endpoints.MapRazorPages();
             });
+            
+
         }
     }
 }
