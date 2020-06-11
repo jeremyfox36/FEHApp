@@ -1,0 +1,8 @@
+C:\Users\Jem\source\repos\FEHApp\FEHServicesLib\bin\Debug\netstandard2.0\FEHServicesLib.deps.json
+C:\Users\Jem\source\repos\FEHApp\FEHServicesLib\bin\Debug\netstandard2.0\FEHServicesLib.dll
+C:\Users\Jem\source\repos\FEHApp\FEHServicesLib\obj\Debug\netstandard2.0\FEHServicesLib.AssemblyInfoInputs.cache
+C:\Users\Jem\source\repos\FEHApp\FEHServicesLib\obj\Debug\netstandard2.0\FEHServicesLib.AssemblyInfo.cs
+C:\Users\Jem\source\repos\FEHApp\FEHServicesLib\bin\Debug\netstandard2.0\FEHServicesLib.pdb
+C:\Users\Jem\source\repos\FEHApp\FEHServicesLib\obj\Debug\netstandard2.0\FEHServicesLib.dll
+C:\Users\Jem\source\repos\FEHApp\FEHServicesLib\obj\Debug\netstandard2.0\FEHServicesLib.pdb
+C:\Users\Jem\source\repos\FEHApp\FEHServicesLib\obj\Debug\netstandard2.0\FEHServicesLib.csprojAssemblyReference.cache

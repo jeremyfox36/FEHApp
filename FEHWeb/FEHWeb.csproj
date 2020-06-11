@@ -2,11 +2,11 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FEHContextLib\FEHContextLib.csproj" />
+    <ProjectReference Include="..\FEHServicesLib\FEHServicesLib.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Google.DataTable.Net.Wrapper" Version="4.0.0" />
-    <PackageReference Include="Microsoft.AspNet.WebHelpers" Version="3.2.7" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.0.0" />
@@ -16,6 +16,7 @@
     </PackageReference>
     <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.0.0" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.0.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
     <PackageReference Include="System.Windows.Forms.DataVisualization" Version="1.0.0-prerelease.19218.1" />
   </ItemGroup>
 
@@ -27,6 +28,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
+    <UserSecretsId>0ff14e31-adc3-4c4d-ae07-aa4878e1bb59</UserSecretsId>
   </PropertyGroup>
   
 </Project>

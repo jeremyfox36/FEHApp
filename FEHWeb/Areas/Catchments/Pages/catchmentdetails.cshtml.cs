@@ -8,19 +8,29 @@ using Newtonsoft.Json;
 using Google.DataTable.Net.Wrapper;
 
 using FEHApp.Shared;
+using FEHServicesLib;
+using System;
+using System.Configuration;
+using Microsoft.Extensions.Configuration;
 
 namespace FEHWeb.Pages
 {
     public class CatchmentDetailsModel : PageModel
     {
         public FehappGaugedcatchment Catchment { get; set; }
-        
+        public double CatchmentLat { get; set; }
+        public double CatchmentLon { get; set; }
         public string jsonAmax { get; set; }
+
         private CatchmentdataContext db;
 
-        public CatchmentDetailsModel(CatchmentdataContext injectedContext)
+        public string MapsKey { get; set; }
+        public IConfiguration Configuration { get; }
+
+        public CatchmentDetailsModel(CatchmentdataContext injectedContext, IConfiguration configuration)
         {
             db = injectedContext;
+            Configuration = configuration;
         }
 
         public void OnGet(int catchmentId)
@@ -32,7 +42,11 @@ namespace FEHWeb.Pages
                 .Include(c => c.FehappAmaxdata)
                 .SingleOrDefault();
             jsonAmax = JsonData(Catchment);
-            
+            CoordinateConvert convertor = new CoordinateConvert();
+            //multiplying by 100 to add trailing zeros and make into 6 figure grid refs
+            CatchmentLat = convertor.GeoUKConvert(Convert.ToDouble(Catchment.NomNgre * 100), Convert.ToDouble(Catchment.NomNgrn * 100)).latitude;
+            CatchmentLon = convertor.GeoUKConvert(Convert.ToDouble(Catchment.NomNgre * 100), Convert.ToDouble(Catchment.NomNgrn * 100)).longitude;
+            MapsKey = Configuration["BingMapsKey"];
         }
 
         private string JsonData(FehappGaugedcatchment amaxData)

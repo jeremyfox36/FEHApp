@@ -1,5 +1,7 @@
 @page "{catchmentId=17002}"
 @model FEHWeb.Pages.CatchmentDetailsModel
+@using Microsoft.Extensions.Configuration
+@inject IConfiguration Configuration
 <div class="row">
     <h1 class="display-2">Details for catchment @Model.Catchment.Catchment</h1>
 </div>
@@ -14,23 +16,30 @@
             <p class="card-text">@Model.Catchment.QmedComments</p>
             <h6>Pooling Comments</h6>
             <p class="card-text">@Model.Catchment.PoolingComments</p>
-            <h6>Easting</h6>
+            <h6>Catchment centroid Easting</h6>
             <p class="card-text">@Model.Catchment.CentroidNgre</p>
-            <h6>Northing</h6>
+            <h6>Catchment centroid Northing</h6>
             <p class="card-text">@Model.Catchment.CentroidNgrn</p>
+            <h6>Nominal easting</h6>
+            <p class="card-text">@Model.Catchment.NomNgre</p>
+            <h6>Nominal northing</h6>
+            <p class="card-text">@Model.Catchment.NomNgrn</p>
+            
         </div>
+    </div>
 </div>
+<div id="map" style='position:relative;height:400px;'>
 </div>
-    <div id="chart"></div>
-    @section Scripts
+<div id="chart"></div>
+@section Scripts
     {
-        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-        <script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script>
         google.charts.load('current', { 'packages': ['corechart'] });
         google.charts.setOnLoadCallback(drawChart);
 
         function drawChart() {
-            
+
             var json = @Html.Raw(Model.jsonAmax);
             var data = new google.visualization.DataTable(json);
             console.log(json);
@@ -48,4 +57,18 @@
 
         }
     </script>
-    }
+    <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap' async defer></script>
+    <script type="text/javascript">
+        function GetMap() {
+            var lat = @Model.CatchmentLat
+            var lon = @Model.CatchmentLon
+            var key = @Configuration["BingMapsKey"]
+            var map = new Microsoft.Maps.Map('#map', {
+                credentials: key,
+                center: new Microsoft.Maps.Location(lat, lon),
+                mapTypeId: Microsoft.Maps.MapTypeId.aerial,
+                zoom: 15
+            });
+        }
+    </script>
+}

@@ -9,6 +9,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FEHEntitiesLib", "FEHEntiti
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FEHWeb", "FEHWeb\FEHWeb.csproj", "{F6C0AB31-97FB-4E74-A9A8-CA69518318DE}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FEHServicesLib", "FEHServicesLib\FEHServicesLib.csproj", "{AC2DD6D2-6B80-4BB6-A0A0-CC65C99448FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FEHServicesLibTests", "FEHServicesLibTests\FEHServicesLibTests.csproj", "{6AD66DCE-0F9C-491D-8B65-D9DE22270A85}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{F6C0AB31-97FB-4E74-A9A8-CA69518318DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6C0AB31-97FB-4E74-A9A8-CA69518318DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6C0AB31-97FB-4E74-A9A8-CA69518318DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC2DD6D2-6B80-4BB6-A0A0-CC65C99448FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC2DD6D2-6B80-4BB6-A0A0-CC65C99448FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC2DD6D2-6B80-4BB6-A0A0-CC65C99448FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC2DD6D2-6B80-4BB6-A0A0-CC65C99448FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AD66DCE-0F9C-491D-8B65-D9DE22270A85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AD66DCE-0F9C-491D-8B65-D9DE22270A85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AD66DCE-0F9C-491D-8B65-D9DE22270A85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AD66DCE-0F9C-491D-8B65-D9DE22270A85}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
