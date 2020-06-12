@@ -60,15 +60,17 @@
     <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap' async defer></script>
     <script type="text/javascript">
         function GetMap() {
-            var lat = @Model.CatchmentLat
-            var lon = @Model.CatchmentLon
-            var key = @Configuration["BingMapsKey"]
-            var map = new Microsoft.Maps.Map('#map', {
-                credentials: key,
-                center: new Microsoft.Maps.Location(lat, lon),
+                var map = new Microsoft.Maps.Map('#map', {
+                credentials: '@Configuration["BingMapsKey"]',
+                center: new Microsoft.Maps.Location(@Model.CatchmentLat, @Model.CatchmentLon),
                 mapTypeId: Microsoft.Maps.MapTypeId.aerial,
                 zoom: 15
-            });
+                });
+
+        var pin = new Microsoft.Maps.Pushpin(map.getCenter(), {
+        });
+
+        map.entities.push(pin);
         }
     </script>
 }
