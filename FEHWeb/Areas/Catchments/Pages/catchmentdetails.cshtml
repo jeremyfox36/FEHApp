@@ -7,29 +7,75 @@
 </div>
 <div class="row">
     <div class="card">
+        <div id="map" style='position:relative;height:400px;'>
+        </div>
         <div class="card-body">
-            <h5 class="card-title">@Model.Catchment.StName</h5>
-            <p class="card-text">@Model.Catchment.CatchmentComments</p>
-            <h6>Station Comments</h6>
-            <p class="card-text">@Model.Catchment.StationComments</p>
-            <h6>QMED Comments</h6>
-            <p class="card-text">@Model.Catchment.QmedComments</p>
-            <h6>Pooling Comments</h6>
-            <p class="card-text">@Model.Catchment.PoolingComments</p>
-            <h6>Catchment centroid Easting</h6>
-            <p class="card-text">@Model.Catchment.CentroidNgre</p>
-            <h6>Catchment centroid Northing</h6>
-            <p class="card-text">@Model.Catchment.CentroidNgrn</p>
-            <h6>Nominal easting</h6>
-            <p class="card-text">@Model.Catchment.NomNgre</p>
-            <h6>Nominal northing</h6>
-            <p class="card-text">@Model.Catchment.NomNgrn</p>
-            
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">@Model.Catchment.StName</h5>
+                            <p class="card-text">@Model.Catchment.CatchmentComments</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6>Station Comments</h6>
+                            <p class="card-text">@Model.Catchment.StationComments</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="card-title">QMED Comments</h6>
+                            <p class="card-text">@Model.Catchment.QmedComments</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="card-title">Pooling Comments</h6>
+                            <p class="card-text">@Model.Catchment.PoolingComments</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="card-title">Catchment centroid Easting</h6>
+                            <p class="card-text">@Model.Catchment.CentroidNgre</p>
+                            <h6 class="card-title">Catchment centroid Northing</h6>
+                            <p class="card-text">@Model.Catchment.CentroidNgrn</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="card-title">Nominal Easting</h6>
+                            <p class="card-text">@Model.Catchment.NomNgre</p>
+                            <h6 class="card-title">Nominal Northing</h6>
+                            <p class="card-text">@Model.Catchment.NomNgrn</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
-<div id="map" style='position:relative;height:400px;'>
-</div>
+
 <div id="chart"></div>
 @section Scripts
     {
