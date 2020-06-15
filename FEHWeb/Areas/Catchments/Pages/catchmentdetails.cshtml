@@ -3,9 +3,44 @@
 @using Microsoft.Extensions.Configuration
 @inject IConfiguration Configuration
 <div class="row">
-    <h1 class="display-2">Details for catchment @Model.Catchment.Catchment</h1>
+    <h2 class="display-2">Details for catchment @Model.Catchment.Catchment</h2>
 </div>
 <div class="row">
+    <div class="col-sm-4">
+        <div class="card card-outline-secondary">
+            <div class="card-header">
+                <h4 class="m-0">Station details</h4>
+            </div>
+            <div class="card-body">
+                <form class="form" role="form" autocomplete="off">
+                    <div class="form-group row">
+                        <label class="m-0 col-md-7 col-form-label form-control-label">Station number</label>
+                        <div class="m-0 col-md-5">
+                            <input class="form-control" type="text" value=@Model.Catchment.Catchment>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="m-0 col-md-7 col-form-label form-control-label">Station name</label>
+                        <div class="m-0 col-md-5">
+                            <input class="form-control" type="text" value=@Model.Catchment.StName>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-sm-4">
+        <div class="card">
+            <div class="card-header">Other Details</div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="card">
+            <div class="card-header">Suitability</div>
+        </div>
+    </div>
+
     <div class="card">
         <div id="map" style='position:relative;height:400px;'>
         </div>
