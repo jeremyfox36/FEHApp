@@ -344,6 +344,17 @@
           "lib/netcoreapp2.1/Google.DataTable.Net.Wrapper.dll": {}
         }
       },
+      "MathNet.Numerics/4.11.0": {
+        "runtime": {
+          "lib/netstandard2.0/MathNet.Numerics.dll": {
+            "assemblyVersion": "4.11.0.0",
+            "fileVersion": "4.11.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/MathNet.Numerics.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Cryptography.Internal/3.0.0": {},
       "Microsoft.AspNetCore.Cryptography.KeyDerivation/3.0.0": {
         "dependencies": {
@@ -2586,7 +2597,8 @@
       "FEHServicesLib/1.0.0": {
         "dependencies": {
           "CoordinateSharp": "2.6.1.1",
-          "GeoUK": "1.1.0"
+          "GeoUK": "1.1.0",
+          "MathNet.Numerics": "4.11.0"
         },
         "runtime": {
           "FEHServicesLib.dll": {}
@@ -4201,6 +4213,13 @@
       "sha512": "sha512-rSwTkXozXMqda93fkRpYE9I8vOhm/fzZf2Vww/NGU1ZzjAtiDW0BkaSicPjWVwBbpcp5573I3n1gSmmJJDVzkQ==",
       "path": "google.datatable.net.wrapper/4.0.0",
       "hashPath": "google.datatable.net.wrapper.4.0.0.nupkg.sha512"
+    },
+    "MathNet.Numerics/4.11.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nmr86AZMGgLprxygcew8Q2BOlPbSYGIkponJMRBoO+CVohkE/CqYJ2KKMThVJUJ0obJxoYI7agCRe61XDVgZuw==",
+      "path": "mathnet.numerics/4.11.0",
+      "hashPath": "mathnet.numerics.4.11.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Cryptography.Internal/3.0.0": {
       "type": "package",

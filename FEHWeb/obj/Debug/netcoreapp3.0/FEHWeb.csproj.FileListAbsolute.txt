@@ -261,3 +261,4 @@ C:\Users\Jem\source\repos\FEHApp\FEHWeb\bin\Debug\netcoreapp3.0\runtimes\win\lib
 C:\Users\Jem\source\repos\FEHApp\FEHWeb\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\Users\Jem\source\repos\FEHApp\FEHWeb\obj\Debug\netcoreapp3.0\FEHWeb.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Jem\source\repos\FEHApp\FEHWeb\obj\Debug\netcoreapp3.0\FEHWeb.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Jem\source\repos\FEHApp\FEHWeb\bin\Debug\netcoreapp3.0\MathNet.Numerics.dll

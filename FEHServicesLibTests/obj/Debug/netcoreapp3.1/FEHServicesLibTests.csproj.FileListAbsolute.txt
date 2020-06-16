@@ -94,3 +94,4 @@ C:\Users\Jem\source\repos\FEHApp\FEHServicesLibTests\obj\Debug\netcoreapp3.1\FEH
 C:\Users\Jem\source\repos\FEHApp\FEHServicesLibTests\obj\Debug\netcoreapp3.1\FEHServicesLibTests.dll
 C:\Users\Jem\source\repos\FEHApp\FEHServicesLibTests\obj\Debug\netcoreapp3.1\FEHServicesLibTests.pdb
 C:\Users\Jem\source\repos\FEHApp\FEHServicesLibTests\bin\Debug\netcoreapp3.1\GeoUk.dll
+C:\Users\Jem\source\repos\FEHApp\FEHServicesLibTests\bin\Debug\netcoreapp3.1\MathNet.Numerics.dll

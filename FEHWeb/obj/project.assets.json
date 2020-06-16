@@ -34,6 +34,15 @@
           "lib/netcoreapp2.1/Google.DataTable.Net.Wrapper.dll": {}
         }
       },
+      "MathNet.Numerics/4.11.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/MathNet.Numerics.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/MathNet.Numerics.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Cryptography.Internal/3.0.0": {
         "type": "package",
         "compile": {
@@ -2945,7 +2954,8 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "CoordinateSharp": "2.6.1.1",
-          "GeoUK": "1.1.0"
+          "GeoUK": "1.1.0",
+          "MathNet.Numerics": "4.11.0"
         },
         "compile": {
           "bin/placeholder/FEHServicesLib.dll": {}
@@ -3009,6 +3019,26 @@
         "lib/netcoreapp2.0/Google.DataTable.Net.Wrapper.dll",
         "lib/netcoreapp2.1/Google.DataTable.Net.Wrapper.dll",
         "lib/netstandard2.0/Google.DataTable.Net.Wrapper.dll"
+      ]
+    },
+    "MathNet.Numerics/4.11.0": {
+      "sha512": "nmr86AZMGgLprxygcew8Q2BOlPbSYGIkponJMRBoO+CVohkE/CqYJ2KKMThVJUJ0obJxoYI7agCRe61XDVgZuw==",
+      "type": "package",
+      "path": "mathnet.numerics/4.11.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net40/MathNet.Numerics.dll",
+        "lib/net40/MathNet.Numerics.xml",
+        "lib/net461/MathNet.Numerics.dll",
+        "lib/net461/MathNet.Numerics.xml",
+        "lib/netstandard1.3/MathNet.Numerics.dll",
+        "lib/netstandard1.3/MathNet.Numerics.xml",
+        "lib/netstandard2.0/MathNet.Numerics.dll",
+        "lib/netstandard2.0/MathNet.Numerics.xml",
+        "mathnet.numerics.4.11.0.nupkg.sha512",
+        "mathnet.numerics.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Cryptography.Internal/3.0.0": {
